@@ -289,7 +289,6 @@
 
     #Contact>div:nth-child(2) img {
       transition: transform 1s;
-      filter: invert(99%) sepia(3%) saturate(816%) hue-rotate(182deg) brightness(116%) contrast(80%);
     }
 
     #Contact>div:nth-child(2) img:hover {
