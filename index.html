@@ -1,0 +1,270 @@
+<!-- 2 x 30min + 3 x 4h + 1 x 3h + 4 x 2h -->
+
+<!-- © created by Daniel Pilich -->
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="author" content="Daniel Pilich">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description"
+    content="Portfolio twórcy strony Daniela Pilicha ukazujący poznane umiejętności oraz prace. Zawiera też krótki opis autora i możliwą drogę kontaktu.">
+  <meta name="keywords" content="portfolio, daniel-pilich, daniel, pilich">
+  <meta http-equiv="X-Ua-Compatible" content="IE=edge,chrome=1">
+
+  <title>Daniel Pilich Portfolio</title>
+
+  <!--Preload all major files-->
+  <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <link rel="preload" as="style"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="preload" as="style" href="style.css" />
+  <link rel="preload" as="script" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js" />
+  <link rel="preload" as="script" href="script.js" />
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+  <!-- Link Font Awesome CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js" defer></script>
+
+</head>
+
+<body>
+  <!-- Swiper main container -->
+  <div class="swiper mySwiper">
+
+    <!--Glowing blob moving on the page-->
+    <div id="blob"></div>
+    <div id="blur"></div>
+
+    <!--First slide - Starting page, introducing-->
+    <div class="swiper-wrapper">
+      <section class="swiper-slide" id="Title" data-hash="slide1">
+        <div>
+          <h1 class="hack" data-value="Daniel Pilich" data-delay=0>Daniel Pilich</h1>
+        </div>
+        <div>
+          <h2 class="hack" data-value="Junior Programmer" data-delay=1000>Junior Programmer</h2>
+        </div>
+        <i class="fa fa-chevron-down"></i>
+      </section>
+
+      <!--Second slide - Author description and photo-->
+      <section class="swiper-slide" id="About" data-hash="slide2">
+        <div class="subtitle">
+          <h3 class="hidden">O MNIE</h3>
+        </div>
+        <div>
+          <img class="hidden about-hidden" style="--order: 1;" src="Photo.webp" alt="Website author's photo">
+        </div>
+        <div>
+          <p class="hidden about-hidden" style="--order: 2;">
+            Jestem młodym programistą z Poznania. Interesuję się nową technologią oraz branżą gier, które wzbudzają we
+            mnie chęć szukania i tworzenia kreatywnych sposobów na rozwiązanie problemów. Mam wykształcenie w zakresie
+            programowania i nieustannie rozwijam się w tym kierunku.
+            <br><br>
+            W wolnych chwilach lubię grać na gitarze, a także interesuję się tematyką treningu siłowego, to znaczy
+            kalisteniką i trójbojem. Pomaga mi to uzyskać dobry balans między pracą umysłową a fizyczną, a także
+            pozostać skupionym i pełnym energii przy pracy nad kolejnymi projektami.
+          </p>
+        </div>
+        <i class="fa fa-chevron-down"></i>
+      </section>
+
+      <!--Third slide - Demonstration of the skills learned by the author with icons -->
+      <section class="swiper-slide" id="Skills" data-hash="slide3">
+        <div class="subtitle">
+          <h3 class="hidden">UMIEJĘTNOŚCI</h3>
+        </div>
+        <div>
+          <div class="subtitle">
+            <h4 class="hidden" style="--order: 1;">Języki, jakie poznałem</h4>
+          </div>
+          <div class="box hidden" style="--order: 2;">
+            <!--https://iconduck.com/icons/12948/csharp-original-->
+            <img src="icons/csharp.svg" alt="CSharp Icon">
+          </div>
+          <div class="box hidden" style="--order: 3;">
+            <!--https://iconduck.com/icons/102006/file-type-html-->
+            <img src="icons/html.svg" alt="HTML Icon">
+          </div>
+          <div class="box hidden" style="--order: 4;">
+            <!--https://iconduck.com/icons/101876/file-type-css-->
+            <img src="icons/css.svg" alt="CSS Icon">
+          </div>
+          <div class="box hidden" style="--order: 5;">
+            <!--https://iconduck.com/icons/13087/javascript-original-->
+            <img src="icons/javascript.svg" alt="JavaScript Icon">
+          </div>
+          <div class="box hidden" style="--order: 6;">
+            <!--https://iconduck.com/icons/13162/postgresql-original-->
+            <img src="icons/postgresql.svg" alt="Postgresql Icon">
+          </div>
+          <div class="box hidden" style="--order: 7;">
+            <!--https://iconduck.com/icons/158808/c-cpp-->
+            <img src="icons/cpp.svg" alt="Cpp Icon">
+          </div>
+          <div class="box hidden" style="--order: 8;">
+            <!--https://iconduck.com/icons/13155/php-original-->
+            <img src="icons/php.svg" alt="PHP Icon">
+          </div>
+          <div class="box hidden" style="--order: 9;">
+            <!--https://iconduck.com/icons/13134/mysql-original-wordmark-->
+            <img src="icons/mysql.svg" alt="MySQL Icon">
+          </div>
+        </div>
+        <div>
+          <div class="subtitle">
+            <h4 class="hidden" style="--order: 10;">Aplikacje, z których korzystam</h4>
+          </div>
+          <div class="box hidden" style="--order: 11;">
+            <!--https://iconduck.com/icons/27679/windows-->
+            <img src="icons/windows.svg" alt="Windows Icon">
+          </div>
+          <div class="box hidden"
+            style="--order: 12; filter: invert(99%) sepia(3%) saturate(816%) hue-rotate(182deg) brightness(116%) contrast(80%);">
+            <!--https://iconduck.com/icons/2159/github-->
+            <img src="icons/github2.svg" alt="Github Icon">
+          </div>
+          <div class="box hidden" style="--order: 13;">
+            <!--https://iconduck.com/icons/95049/visual-studio-code-->
+            <img src="icons/visualstudiocode.svg" alt="CSS Icon">
+          </div>
+          <div class="box hidden" style="--order: 14;">
+            <!--https://iconduck.com/icons/95050/visual-studio-->
+            <img src="icons/visualstudio.svg" alt="CSS Icon">
+          </div>
+        </div>
+        <i class="fa fa-chevron-down"></i>
+      </section>
+
+      <!--Fourth slide - Presentation of the author's projects with a short description-->
+      <section class="swiper-slide" id="Projects" data-hash="slide4">
+        <div class="subtitle">
+          <h3 class="hidden">Projekty</h3>
+        </div>
+        <div class="swiper mySwiper2 hidden" style="--order:1;">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="preview">
+                <img src="projects/hotel2.gif" alt="GIF showing university project about hotel room reservation system">
+              </div>
+              <div class="description">
+                <div>
+                  <h4>
+                    <a href="https://github.com/danielpilich/hotel-room-reservation-system">
+                      System rezerwacji pokojów hotelowych
+                    </a>
+                  </h4>
+                  <h5>Rok: 2022 &emsp; Czas tworzenia: 22h</h5>
+                  <p>
+                    Program tworzony na zajęcia "Programowanie obiektowe". <br><br>
+
+                    Program ma na celu przedstawić umiejętność tworzenia czytelnego i dobrze ustrukturyzowanego kodu
+                    z wykorzystaniem hermetyzacji, polimorfizmu oraz dziedziczenia. Zaimplementowana została również
+                    obsługa wyjątków oraz kolekcji.<br>
+
+                    Przy wykorzystaniu tej aplikacji użytkownik może rezerwować pokoje standardowe oraz VIP, wprowadzać
+                    swój budżet i go modyfikować, przeprowadzić proste testy oraz
+                    wyświetlić schemat hotelu wraz ze statusem pokoi.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="preview">
+                <img src="" alt="">
+              </div>
+              <div class="description">
+                <div>
+                  <h4>
+                    <a href="https://github.com/danielpilich/mini-projects-csharp">
+                      Algorytmy, struktury danych i inne
+                    </a>
+                  </h4>
+                  <h5>Rok: 2023 &emsp; Czas tworzenia: stale rozwijane</h5>
+                  <p>
+                    Zbiór małych programów opierających się na konkretnym zagadnieniu, lecz nie zasługujących na odrębne
+                    repozytorium. Prowadzony w ramach nauki programowania w danym języku oraz praktyki. Aktualnie
+                    skupiam się na języku C#.
+                    W repozytorium tematy oddzielone są folderami, aby ułatwić nawigację. Projekt jest stale rozwijany i
+                    prowadzony w wolnym czasie.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-scrollbar"></div>
+        </div>
+        <i class="fa fa-chevron-down"></i>
+      </section>
+
+      <!--Last slide - Media and contact to the author of the page-->
+      <section class="swiper-slide" id="Contact" data-hash="slide5">
+        <div class="subtitle">
+          <h3 class="hidden">Kontakt</h3>
+        </div>
+        <div>
+          <div class="box hidden" style="--order: 1;">
+            <a href="https://www.linkedin.com/in/daniel-pilich/">
+              <!--https://iconduck.com/icons/103018/social-linkedin-->
+              <img src="icons/linkedin.svg" alt="LinkedIn website Icon">
+              LinkedIn
+            </a>
+          </div>
+
+          <div class="box hidden" style="--order: 2; ">
+            <a href="https://github.com/danielpilich">
+              <!--https://iconduck.com/icons/2159/github-->
+              <img src="icons/github2.svg" alt="Github Icon">
+              GitHub
+            </a>
+          </div>
+
+          <div class="box hidden" style="--order: 3;">
+            <a href="mailto:dpilich16@gmail.com" onclick="showMail()">
+              <!--https://iconduck.com/icons/53810/envelope-closed-->
+              <img src="icons/mail.svg" alt="E-mail Icon">
+              <span id="mail">
+                E-mail
+              </span>
+            </a>
+          </div>
+        </div>
+        <div>
+          <h6>&copy; Copyright by Daniel Pilich 2023</h6>
+        </div>
+      </section>
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</body>
+
+</html>
+
+<!--
+  Licences of used features
+  Font Awesome by Dave Gandy - http://fontawesome.io
+  https://fontawesome.com/v4/license/
+
+  Swiper JS
+  https://github.com/nolimits4web/swiper/blob/master/LICENSE
+
+  Iconduck Icons -> https://choosealicense.com/licenses/mit/
+    Devicons Set v2 https://iconduck.com/sets/devicons-set-v2
+    Visual Studio Code Icons https://iconduck.com/sets/visual-studio-code-icons
+    Workflow Logos https://iconduck.com/sets/workflow-logos
+    Open Iconic Icon Set https://iconduck.com/sets/open-iconic-icon-set
+-->
