@@ -59,16 +59,25 @@ const observer2 = new IntersectionObserver((events) => {
 document.querySelectorAll(".hack").forEach((elem) => observer2.observe(elem));
 
 //Flying blob moving after the pointer
-const blob = document.getElementById("blob");
-
-window.onpointermove = event => {
-    const { clientX, clientY } = event;
-
-    blob.animate({
-        left: `${clientX}px`,
-        top: `${clientY}px`
-    }, { duration: 3000, fill: "forwards" });
+function isMobile() {
+    return /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent);
 }
+
+if (window.screen.width > 780 && !isMobile()){
+    const blob = document.getElementById("blob");
+
+    window.onpointermove = event => {
+        const { clientX, clientY } = event;
+    
+        blob.animate({
+            left: `${clientX}px`,
+            top: `${clientY}px`
+        }, { duration: 3000, fill: "forwards" });
+    }
+}
+
+    
+
 
 function showMail() {
     document.getElementById("mail").textContent = "dpilich16@gmail.com";
